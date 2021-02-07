@@ -63,7 +63,6 @@ class App extends Component {
 
 	getConvertedValue(amount, quote) {
 		const { rates } = this.state;
-		console.log(rates[quote]);
 		const quoteAmount = Number(rates[quote] || 1);
 		return amount / quoteAmount; 
 	}
